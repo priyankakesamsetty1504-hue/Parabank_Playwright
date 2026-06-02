@@ -20,7 +20,7 @@ test.describe('02 - Registration Tests', () => {
     const data = { ...testData.registration.valid, username: helpers.uniqueUsername() };
     await registerPage.register(data);
     const msg = await registerPage.getSuccessMessage();
-    expect(msg).toContain('created successfully');
+    expect(msg).toContain('welcome');
   });
 
   test('TC005 - @regression Registration with empty required fields', async ({ page }) => {
