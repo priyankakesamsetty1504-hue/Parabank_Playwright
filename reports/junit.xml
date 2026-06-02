@@ -1,0 +1,245 @@
+<testsuites id="" name="" tests="3" failures="3" skipped="0" errors="0" time="13.053139">
+<testsuite name="02_register.spec.js" timestamp="2026-05-30T03:01:29.757Z" hostname="chromium" tests="3" failures="3" skipped="0" time="12.936" errors="0">
+<testcase name="02 - Registration Tests › TC004 - @smoke Successful user registration with valid data" classname="02_register.spec.js" time="4.873">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
+<![CDATA[  [chromium] › 02_register.spec.js:19:3 › 02 - Registration Tests › TC004 - @smoke Successful user registration with valid data 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "created successfully"
+    Received string:    "If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information."
+
+      21 |     await registerPage.register(data);
+      22 |     const msg = await registerPage.getSuccessMessage();
+    > 23 |     expect(msg).toContain('created successfully');
+         |                 ^
+      24 |   });
+      25 |
+      26 |   test('TC005 - @regression Registration with empty required fields', async ({ page }) => {
+        at C:\Users\Priyanka\Downloads\parabank-playwright-framework 2\parabank-framework\tests\02_register.spec.js:23:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "created successfully"
+    Received string:    "If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information."
+
+      21 |     await registerPage.register(data);
+      22 |     const msg = await registerPage.getSuccessMessage();
+    > 23 |     expect(msg).toContain('created successfully');
+         |                 ^
+      24 |   });
+      25 |
+      26 |   test('TC005 - @regression Registration with empty required fields', async ({ page }) => {
+        at C:\Users\Priyanka\Downloads\parabank-playwright-framework 2\parabank-framework\tests\02_register.spec.js:23:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\02_register-02---Registrat-66e04-egistration-with-valid-data-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="02 - Registration Tests › TC005 - @regression Registration with empty required fields" classname="02_register.spec.js" time="4.638">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(received).toBeGreaterThan(expected)" type="expect.toBeGreaterThan">
+<![CDATA[  [chromium] › 02_register.spec.js:26:3 › 02 - Registration Tests › TC005 - @regression Registration with empty required fields 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      27 |     await registerPage.register(testData.registration.missingFields);
+      28 |     const errors = await registerPage.getErrorMessages();
+    > 29 |     expect(errors.length).toBeGreaterThan(0);
+         |                           ^
+      30 |   });
+      31 |
+      32 |   test('TC006 - @regression Registration with duplicate username', async ({ page }) => {
+        at C:\Users\Priyanka\Downloads\parabank-playwright-framework 2\parabank-framework\tests\02_register.spec.js:29:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      27 |     await registerPage.register(testData.registration.missingFields);
+      28 |     const errors = await registerPage.getErrorMessages();
+    > 29 |     expect(errors.length).toBeGreaterThan(0);
+         |                           ^
+      30 |   });
+      31 |
+      32 |   test('TC006 - @regression Registration with duplicate username', async ({ page }) => {
+        at C:\Users\Priyanka\Downloads\parabank-playwright-framework 2\parabank-framework\tests\02_register.spec.js:29:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\02_register-02---Registrat-32120--with-empty-required-fields-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="02 - Registration Tests › TC006 - @regression Registration with duplicate username" classname="02_register.spec.js" time="3.425">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(received).toBeTruthy()" type="expect.toBeTruthy">
+<![CDATA[  [chromium] › 02_register.spec.js:32:3 › 02 - Registration Tests › TC006 - @regression Registration with duplicate username 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      35 |     await registerPage.register(data);
+      36 |     const errors = await registerPage.getErrorMessages();
+    > 37 |     expect(errors.some(e => e.includes('username') || e.includes('taken') || e.includes('already'))).toBeTruthy();
+         |                                                                                                      ^
+      38 |   });
+      39 | });
+      40 |
+        at C:\Users\Priyanka\Downloads\parabank-playwright-framework 2\parabank-framework\tests\02_register.spec.js:37:102
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      35 |     await registerPage.register(data);
+      36 |     const errors = await registerPage.getErrorMessages();
+    > 37 |     expect(errors.some(e => e.includes('username') || e.includes('taken') || e.includes('already'))).toBeTruthy();
+         |                                                                                                      ^
+      38 |   });
+      39 | });
+      40 |
+        at C:\Users\Priyanka\Downloads\parabank-playwright-framework 2\parabank-framework\tests\02_register.spec.js:37:102
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\02_register-02---Registrat-551f0-ion-with-duplicate-username-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,21 @@
+{
+  "name": "parabank-playwright-framework",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright Framework for ParaBank Application",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:regression": "npx playwright test --grep @regression",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report reports/html",
+    "clean": "rimraf reports screenshots test-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "dotenv": "^16.4.5",
+    "rimraf": "^5.0.7"
+  }
+}
