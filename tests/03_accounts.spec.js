@@ -7,6 +7,7 @@ const { test, expect } = require('@playwright/test');
 const LoginPage        = require('../pages/LoginPage');
 const AccountsPage     = require('../pages/AccountsPage');
 const testData         = require('../test-data/testData');
+// WIP: adding new account test - not finished yet
 
 test.describe('03 - Accounts Overview Tests', () => {
   let loginPage, accountsPage;
